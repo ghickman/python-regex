@@ -19,6 +19,10 @@ table {
 /*   width: 950px; */
 }
 
+h1 {
+    text-align: center;
+}
+
 /* #regexs { */
 /*   /*background-color: grey;*/ */
 /*   list-style: none; */
