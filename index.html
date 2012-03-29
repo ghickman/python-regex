@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Python Regular Expression Syntax</title>
+</head>
+<body>
+    <table id="regexs">
+        <thead>
+            <tr>
+                <th>Syntax</th>
+                <th>Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="regex">
+                <td class="syntax">.</td>
+                <td class="info">Default Mode: match any character except a newline. DOTALL Flag specified: matches any character including a newline.</td>
+            </tr>
+            <tr class="regex">
+                <td class="syntax">^</td>
+                <td class="info">Matches the start of the string, and in MULTILINE mode also matches immediately after each newline.</td>
+            </tr>
+            <tr>
+                <td class="syntax">$</td>
+                <td class="info">Matches the end of the string or just before the newline at the end of the string, and in MULTILINE mode also matches before a newline. foo matches both 'foo' and 'foobar', while the regular expression foo$ matches only 'foo'. More interestingly, searching for foo.$ in 'foo1\nfoo2\n' matches 'foo2' normally, but 'foo1' in MULTILINE mode; searching for a single $ in 'foo\n' will find two (empty) matches: one just before the newline, and one at the end of the string.</td>
+            </tr>
+            <tr>
+                <td class="syntax">*</td>
+                <td class="info">Causes the resulting RE to match 0 or more repetitions of the preceding RE, as many repetitions as are possible. ab* will match 'a', 'ab', or 'a' followed by any number of 'b's.</td>
+            </tr>
+            <tr>
+                <td class="syntax">+</td>
+                <td class="info">Match 1 or more repetitions of the preceding RE. ab+ will match 'a' followed by any non-zero number of 'b's; it will not match just 'a'.</td>
+            </tr>
+            <tr>
+                <td class="syntax">?</td>
+                <td class="info">Match 0 or 1 repetitions of the preceding RE.</td>
+            </tr>
+            <tr>
+                <td class="syntax">*?, +?, ??</td>
+                <td class="info">Non greedy versions of *, + and ?</td>
+            </tr>
+            <tr>
+                <td class="syntax">{m}</td>
+                <td class="info">Match m copies of the previous RE.</td>
+            </tr>
+            <tr>
+                <td class="syntax">{m,n}</td>
+                <td class="info">Match m to n copies of the previous RE.</td>
+            </tr>
+            <tr>
+                <td class="syntax">{m,n}?</td>
+                <td class="info">Match m to n copies of the previous RE, attempting to match as few as possible (non-greedy).</td>
+            </tr>
+            <tr>
+                <td class="syntax">\</td>
+                <td class="info">Escape other characters ($, *, +, etc).</td>
+            </tr>
+            <tr>
+                <td class="syntax">[]</td>
+                <td class="info">Match a set of characters.</td>
+            </tr>
+            <tr>
+                <td class="syntax">|</td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <td class="syntax">()</td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <td class="syntax">(?)</td>
+                <td class="info"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="sources">
+        <p><a href="http://python.org">Python's</a> regular expression <a href="http://docs.python.org/trbrary/re.html">syntax</a></p>
+    </div>
+    <div id="why">
+    </div>
+</body>
+</html>

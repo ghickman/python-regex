@@ -1,0 +1,29 @@
+.left {float:left;}
+.right {float:right;}
+.clr {clear:both; height:1px; font-size:1px; line-height:1px;}
+.no_margin_top{margin-top:0;}
+.no_margin_right{margin-right:0;}
+.no_margin_bottom{margin-bottom:0;}
+.no_margin_left{margin-left:0;}
+
+.wrapper {
+  width: 999px;
+  margin: 0 auto;
+}
+
+table {
+/*   color: #000; */
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+/*   padding: 0; */
+/*   width: 950px; */
+}
+
+/* #regexs { */
+/*   /*background-color: grey;*/ */
+/*   list-style: none; */
+/* } */
+
+/* .regex:nth-child(even) { */
+/*   background-color: grey; */
+/* } */
